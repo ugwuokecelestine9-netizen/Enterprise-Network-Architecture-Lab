@@ -7,7 +7,7 @@ This project simulates a multi-department enterprise environment with VLAN segme
 
 ---
 
-## 📌 Project Overview
+##      Project Overview
 
 The objective of this project was to design, configure, secure, troubleshoot, and validate an enterprise network infrastructure.
 
@@ -26,7 +26,7 @@ The network was built to simulate real-world enterprise requirements including:
 
 ---
 
-## 🏗️ Network Architecture
+##      Network Architecture
 
 The network follows a hierarchical enterprise design:
 
