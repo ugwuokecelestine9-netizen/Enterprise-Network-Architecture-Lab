@@ -190,6 +190,4 @@ The most important part of this project was not simply getting the network to wo
 The project followed a continuous cycle of : Design → Configure → Test → Troubleshoot → Fix → Retest → Document
 
 
-                   [
-
 
