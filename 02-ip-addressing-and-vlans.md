@@ -131,3 +131,21 @@ The VLAN configuration was verified using:
 
 ```text
 show vlan brief
+
+Verification confirmed that VLANs 10 through 60 are operational on the distribution switches.
+The VLAN 99 gateway configuration remains subject to additional verification.
+
+6. Screenshot Evidence
+Verification screenshots are stored in the SCREENSHOTS directory.
+Evidence includes:
+DIST1-SHOW-VLAN-BRIEF.png
+DIST2-SHOW-VLAN-BRIEF.png
+DIST1-show-ip-interface-brief.png
+DIST2-show-ip-interface-brief.png
+These screenshots provide evidence of VLAN creation and Layer 3 SVI addressing on the distribution switches.
+
+7. Design Notes
+The /24 addressing scheme provides a simple and consistent structure for the enterprise network.
+Using predictable SVI addresses makes device configuration and troubleshooting easier.
+The distribution layer provides the Layer 3 boundary for the user VLANs, while VLAN segmentation maintains logical separation between departments.
+VLAN 99 is intentionally documented separately until its gateway and redundancy configuration have been fully verified.
