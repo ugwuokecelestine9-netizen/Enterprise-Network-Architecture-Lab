@@ -52,6 +52,7 @@ The final VLAN 99 gateway and HSRP state will be documented after verification.
     DESIGN BENEFIT:
 
 The Layer 3 design provides:
+
 Efficient inter-VLAN routing
 Local routing at the distribution layer
 Reduced dependency on external routers for internal communication
@@ -75,4 +76,5 @@ The VLANs must have:
 
 The troubleshooting process demonstrated the importance of verifying each layer individually before moving to the next stage
 
-
+   /KEY LESSON/
+A functioning enterprise network requires more than simply creating VLANs.
