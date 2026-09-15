@@ -56,7 +56,7 @@ Support for redundant distribution-layer gateway design
 A structured path toward the core, firewall and external network
 
 
-13.  /KEY LESSON/
+13.  /THE VLANS MUST HAVE;/
 A functioning enterprise network requires more than simply creating VLANs.
 The VLANs must have:
 1.Correct Layer 2 configuration
