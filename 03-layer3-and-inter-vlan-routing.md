@@ -29,22 +29,28 @@ Firewall
      v
 Edge Router / External Network
 
-
+     / SHOW EVIDENCE/
 The following verification screenshots are stored in the SCREENSHOTS directory:
+
 DIST1-SHOW-VLAN-BRIEF.png
 DIST2-SHOW-VLAN-BRIEF.png
 DIST1-show-ip-interface-brief.png
 DIST2-show-ip-interface-brief.png
 These screenshots provide evidence of the VLAN configuration and Layer 3 SVI status on the distribution switches.
 Additional ping verification screenshots will be added when final inter-VLAN connectivity testing is completed.
-11. VLAN 99 – Server / Infrastructure
+
+   VLAN 99 – Server / Infrastructure
+
 VLAN 99 is reserved for server and infrastructure services.
 Its network is:
 192.168.99.0/24
 The Layer 3 gateway configuration for VLAN 99 is intentionally left for separate verification.
 This is important because the server/infrastructure VLAN is associated with infrastructure services and gateway redundancy.
 The final VLAN 99 gateway and HSRP state will be documented after verification.
-12. Design Benefits
+
+
+    DESIGN BENEFIT:
+
 The Layer 3 design provides:
 Efficient inter-VLAN routing
 Local routing at the distribution layer
@@ -56,7 +62,8 @@ Support for redundant distribution-layer gateway design
 A structured path toward the core, firewall and external network
 
 
-13.  /THE VLANS MUST HAVE;/
+         /THE VLANS MUST HAVE;/
+
 A functioning enterprise network requires more than simply creating VLANs.
 The VLANs must have:
 1.Correct Layer 2 configuration
