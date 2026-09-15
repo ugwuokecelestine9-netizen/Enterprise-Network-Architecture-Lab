@@ -30,31 +30,42 @@ Firewall
 Edge Router / External Network
 
 
-Inter-VLAN routing allows devices located in different VLANs to communicate through Layer 3 routing.
+The following verification screenshots are stored in the SCREENSHOTS directory:
+DIST1-SHOW-VLAN-BRIEF.png
+DIST2-SHOW-VLAN-BRIEF.png
+DIST1-show-ip-interface-brief.png
+DIST2-show-ip-interface-brief.png
+These screenshots provide evidence of the VLAN configuration and Layer 3 SVI status on the distribution switches.
+Additional ping verification screenshots will be added when final inter-VLAN connectivity testing is completed.
+11. VLAN 99 – Server / Infrastructure
+VLAN 99 is reserved for server and infrastructure services.
+Its network is:
+192.168.99.0/24
+The Layer 3 gateway configuration for VLAN 99 is intentionally left for separate verification.
+This is important because the server/infrastructure VLAN is associated with infrastructure services and gateway redundancy.
+The final VLAN 99 gateway and HSRP state will be documented after verification.
+12. Design Benefits
+The Layer 3 design provides:
+Efficient inter-VLAN routing
+Local routing at the distribution layer
+Reduced dependency on external routers for internal communication
+Clear separation of Layer 2 and Layer 3 functions
+Improved scalability
+Better fault isolation
+Support for redundant distribution-layer gateway design
+A structured path toward the core, firewall and external network
 
-For example, traffic from a device in the HR VLAN to a device in the Finance VLAN follows this general process:
 
+13.  /KEY LESSON/
+A functioning enterprise network requires more than simply creating VLANs.
+The VLANs must have:
+1.Correct Layer 2 configuration
+2.Correct Layer 3 SVIs
+3.Correct gateway addressing
+4.Correct routing
+5.Correct upstream connectivity
+6.Proper verification
 
-HR Host
-   |
-   v
-VLAN 20
-   |
-   v
-HR SVI
-192.168.20.2 / 192.168.20.3
-   |
-   v
-Layer 3 Routing
-   |
-   v
-Finance SVI
-192.168.30.2 / 192.168.30.3
-   |
-   v
-VLAN 30
-   |
-   v
-Finance Host
+The troubleshooting process demonstrated the importance of verifying each layer individually before moving to the next stage
 
 
