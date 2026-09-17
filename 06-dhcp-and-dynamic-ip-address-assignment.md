@@ -105,3 +105,5 @@ DHCP was successfully verified in Lab 5.
 The network uses a centralized DHCP server at 192.168.99.10, while DNS services are provided by 192.168.99.11.
 
 PC1 successfully received a dynamic address from the DHCP server, confirming that DHCP operation for VLAN 20 is functioning correctly.
+
+VISIT SCREENSHOT FOLDER FOR MORE
