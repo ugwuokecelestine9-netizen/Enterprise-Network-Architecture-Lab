@@ -54,7 +54,7 @@ ip nat inside source list 1 interface gigabitEthernet0/0/1 overload
 
 The overload keyword enables multiple internal hosts to share the address of the outside interface using different port numbers.
 
-Verification
+VERIFICATION:
 
 The NAT configuration was verified with:
 
@@ -85,12 +85,12 @@ and:
 
 Therefore, NAT/PAT was implemented on the EDGE router instead.
 
-Lab Scope
+LAB SCOPE
 
 This lab does not include an external ISP/WAN router. Therefore, live NAT translations were not generated.
 
 The NAT/PAT configuration itself was successfully accepted and verified on the EDGE router.
 
-Conclusion
+CONCLUSION
 
 NAT/PAT configuration was completed on the EDGE router. The configuration identifies the internal enterprise networks, marks the inside/outside interfaces, and enables PAT using interface overload.
